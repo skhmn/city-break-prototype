@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>User Profile</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        .profile-container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #userOutput {
+            background: #f9f9f9;
+            padding: 15px;
+            margin-top: 20px;
+            border-left: 4px solid #3498db;
+            border-radius: 5px;
+        }
+
+        .save-btn {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar" role="navigation" aria-label="Main site navigation">
+    <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="bridges.html" class="nav-link">Bridges</a></li>
+        <li>
+            <a href="#" class="nav-link disabled" aria-disabled="true" title="Interactive stadium map, matchday pubs, parking & fixtures">
+                Matchday Guide (Coming Soon)
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link disabled" aria-disabled="true" title="Traditional Geordie dishes with photos, reviews & star ratings">
+                Geordie Scran (Coming Soon)
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<div class="profile-container">
+    <h2>User Profile</h2>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" value="Jamie" />
+
+    <label for="hometown">Hometown:</label>
+    <input type="text" id="hometown" value="Leicester" />
+
+    <label for="favourite">Favourite Bridge:</label>
+    <input type="text" id="favourite" value="Tyne Bridge" />
+
+    <button onclick="saveProfile()" class="save-btn">Save Changes</button>
+
+    <div id="userOutput">
+        <p><strong>Name:</strong> Jamie</p>
+        <p><strong>Hometown:</strong> Leicester</p>
+        <p><strong>Favourite Bridge:</strong> Tyne Bridge</p>
+    </div>
+</div>
+
+<script> src="js/profile.js" </script>
+
+</body>
+</html>

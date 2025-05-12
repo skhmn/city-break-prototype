@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridges of the Tyne - Homepage</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .btn-group button {
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            width: 220px;
+        }
+
+        .btn-group button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar" role="navigation" aria-label="Main site navigation">
+    <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="bridges.html" class="nav-link">Bridges</a></li>
+        <li>
+            <a href="#" class="nav-link disabled" aria-disabled="true" title="Interactive stadium map, matchday pubs, parking & fixtures">
+                Matchday Guide (Coming Soon)
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link disabled" aria-disabled="true" title="Traditional Geordie dishes with photos, reviews & star ratings">
+                Geordie Scran (Coming Soon)
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h1>Welcome to the Weekend City Break Guide</h1>
+    <p style="text-align: center;">Explore Newcastle through interactive features.</p>
+    <div class="btn-group">
+        <button onclick="location.href='profile.html'">User Profile</button>
+        <button onclick="location.href='bridges.html'">Explore Bridges of the Tyne</button>
+        <!-- Matchday Guide Button -->
+        <button onclick="alert('The Matchday Guide would include an interactive stadium map showing entrances, upcoming fixtures, nearby pubs and parking options. Pins are hoverable and reveal details with popups.')">
+            Matchday Guide
+        </button>
+
+        <!-- Geordie Scran Button -->
+        <button onclick="alert('The Geordie Scran feature would list traditional Geordie food spots. Clicking a restaurant shows traditional dishes and user reviews using a star rating system.')">
+            Geordie Scran
+        </button>
+
+    </div>
+</div>
+</body>
+</html>

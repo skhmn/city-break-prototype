@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridges of the Tyne</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <!--<style>
+        #map { height: 90vh; width: 100%; }
+        .popup-content { font-size: 0.9rem; }
+        .stars span { cursor: pointer; font-size: 20px; color: gray; }
+        .stars span.selected { color: gold; }
+    </style>-->
+</head>
+<body>
+<nav class="navbar" role="navigation" aria-label="Main site navigation">
+    <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="bridges.html" class="nav-link">Bridges</a></li>
+        <li>
+            <a href="#" class="nav-link disabled" aria-disabled="true" title="Interactive stadium map, matchday pubs, parking & fixtures">
+                Matchday Guide (Coming Soon)
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link disabled" aria-disabled="true" title="Traditional Geordie dishes with photos, reviews & star ratings">
+                Geordie Scran (Coming Soon)
+            </a>
+        </li>
+    </ul>
+</nav>
+<h1>Interactive Map: Bridges of the Tyne</h1>
+<div id="map"></div>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Review Modal -->
+<div id="reviewModal" class="review-modal" tabindex="0">
+    <div class="review-modal-content">
+        <h3 id="reviewTitle">Reviews</h3>
+        <div class="review-scroll">
+            <p>⭐ ⭐ ⭐ ⭐ – “Great spot for photos!”</p>
+            <p>⭐ ⭐ ⭐ – “Could use more info plaques.”</p>
+            <p>⭐ ⭐ ⭐ ⭐ ⭐ – “Iconic and beautiful!”</p>
+        </div>
+        <p><strong>Your Rating:</strong></p>
+        <div id="stars" style="font-size: 1.5rem;"></div>
+        <br />
+        <button onclick="closeReviewModal()" aria-label="Close review modal">Close</button>
+    </div>
+</div>
+
+</body>
+</html>
