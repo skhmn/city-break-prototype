@@ -141,4 +141,66 @@ button:focus {
 .nav-link.disabled:active {
     pointer-events: none;
 }
+/*added after*/
 
+.profile-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#userOutput {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-top: 20px;
+    border-left: 4px solid #3498db;
+    border-radius: 5px;
+}
+
+.save-btn {
+    margin-top: 20px;
+}
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn-group button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    width: 220px;
+}
+
+.btn-group button:hover {
+    background-color: #0056b3;
+}
